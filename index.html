@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+      <button id="themeToggle">Dark Mode</button>
+  <h1>My Task Tracker</h1>
+
+  <input type="text" id="taskInput" placeholder="Enter a task">
+  <button id="addButton">Add Task</button>
+  <div id="filters">
+  <button class="filter-btn active" data-filter="all">All</button>
+  <button class="filter-btn" data-filter="active">Active</button>
+  <button class="filter-btn" data-filter="completed">Completed</button>
+</div>
+  <p id="taskCounter"></p>
+  <ul id="taskList"></ul>
+</body>
+  <script src="script.js"></script>
+</html>

@@ -1,0 +1,160 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+#taskInput {
+  width: 70%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#addButton {
+  padding: 10px 16px;
+  font-size: 16px;
+  background-color: #4a6cf7;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#addButton:hover {
+  background-color: #3a57d1;
+}
+
+#taskList li {
+  background-color: white;
+  padding: 12px;
+  margin-bottom: 8px;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#taskList span {
+  cursor: pointer;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #888;
+}
+.delete-btn {
+  padding: 6px 10px;
+  font-size: 14px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background-color: #c0392b;
+}
+#taskCounter {
+  margin-top: 12px;
+  color: #555;
+  font-weight: bold;
+}
+.task-buttons {
+  display: flex;
+  gap: 6px;
+}
+
+.edit-btn {
+  padding: 6px 10px;
+  font-size: 14px;
+  background-color: #f39c12;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.edit-btn:hover {
+  background-color: #d68910;
+}
+#filters {
+  margin-top: 20px;
+  display: flex;
+  gap: 8px;
+}
+
+.filter-btn {
+  padding: 6px 12px;
+  font-size: 14px;
+  background-color: white;
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.filter-btn.active {
+  background-color: #4a6cf7;
+  color: white;
+  border-color: #4a6cf7;
+}
+#themeToggle {
+  display: block;
+  margin-left: auto;
+  padding: 6px 12px;
+  font-size: 14px;
+  background-color: white;
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* ----- Dark mode styles ----- */
+body.dark {
+  background-color: #1e1e2e;
+  color: #eeeeee;
+}
+
+body.dark h1 {
+  color: #eeeeee;
+}
+
+body.dark #taskInput {
+  background-color: #2b2b3d;
+  color: #eeeeee;
+  border-color: #555555;
+}
+
+body.dark #taskList li {
+  background-color: #2b2b3d;
+  box-shadow: none;
+}
+
+body.dark #taskCounter {
+  color: #cccccc;
+}
+
+body.dark #themeToggle,
+body.dark .filter-btn {
+  background-color: #2b2b3d;
+  color: #eeeeee;
+  border-color: #555555;
+}
+
+body.dark .filter-btn.active {
+  background-color: #4a6cf7;
+  color: white;
+  border-color: #4a6cf7;
+}
